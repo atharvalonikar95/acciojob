@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+.mainContainer {
+    width: 50%;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    color: #fff;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.inputField {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    width: 100%;
+    margin: 20px 0;
+}
+.submitBtn {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
