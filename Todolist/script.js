@@ -15,7 +15,7 @@ function updateTaskIndexes(container) {
         const title = row.querySelector("p");
         if (title) {
             const taskName = row.dataset.taskName || title.textContent.replace(/^\d+\.\s*/, "");
-            title.textContent = `${index + 1}. Task: ${taskName}`;
+            title.textContent = `${index + 1}.  ${taskName}`;
         }
     });
 }
@@ -55,7 +55,7 @@ addButton.addEventListener("click", function() {
     }
     
     const p1 = document.createElement("p");
-    p1.textContent = `Task: ${taskValue}`;
+    p1.textContent = ` ${taskValue}`;
     const p2 = document.createElement("p");
     p2.textContent = `${dueDateValue}`;
     const p3 = document.createElement("p");
@@ -138,7 +138,7 @@ window.onload = function() {
     
     storedTasks.forEach((t,idx )=> {
         const p1 = document.createElement("p");
-        p1.textContent = `Task: ${t.task}`;
+        p1.textContent = `${t.task}`;
         const p2 = document.createElement("p");
         p2.textContent = ` ${t.dueDate}`;
         const p3 = document.createElement("p");
